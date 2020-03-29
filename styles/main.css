@@ -1,11 +1,17 @@
 @import "main-styles.css";
 
 @media(min-width:1024px){
+
+body {
+  white-space:nowrap;
+  margin: 0;
+  padding: 0;
+}
+
 #navbar {
+  position:fixed;
   display:flex;
   flex-direction:row;
-  
-  
   width:100%;
   height:100px;
 }
@@ -17,10 +23,13 @@
   justify-content:flex-start;
   height:100px;
   align-items:center;
+  margin:0;
+  padding:0;
 }
 
 #navbar-header h1 {
   display:flex;
+  position:relative;
   flex-direction:row;
   align-items:center;
   justify-content:flex-start;
@@ -55,11 +64,14 @@
   width:33%;
   height:100px;
   margin-right:1px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  text-decoration:none;
 }
 
-.navbar-link:hover{
-  background-color:#3a3d40;
-}
 
 #container {
   padding-top:110px;
@@ -73,15 +85,21 @@
   padding-left:20px;
   height:100px;
   width:100%;
-  box-shadow:-5px -5px 50px #3a3d40;
 }
 }
 
 @media(max-width:1023px){
+  
+  body {
+    white-space:nowrap;
+    margin: 0;
+    padding: 0;
+  }  
+  
   #navbar {
   display:flex;
+  position:fixed;
   flex-direction:row;
-color:blue;
   width:100%;
   height:100px;
 }
@@ -93,6 +111,8 @@ color:blue;
   justify-content:flex-start;
   height:100px;
   align-items:center;
+  margin:0;
+  padding:0;
 }
 
 #navbar-header h1 {
@@ -104,6 +124,7 @@ color:blue;
   margin:0px 0px 0px 25px;
   height:60px;
   font-size:25px;
+  position:relative;
 }
 
 #navbar-header p {
@@ -129,11 +150,14 @@ color:blue;
   width:33%;
   height:100px;
   margin-right:1px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  text-decoration:none;
 }
 
-.navbar-link:hover{
-  background-color:#3a3d40;
-}
 
 #container {
   padding-top:110px;
@@ -147,6 +171,5 @@ color:blue;
   padding-left:20px;
   height:100px;
   width:100%;
-  box-shadow:-5px -5px 50px #3a3d40;
 }
 }
