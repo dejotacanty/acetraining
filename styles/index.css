@@ -1,0 +1,50 @@
+@import "main.css";
+
+/**
+
+ * index.scss
+ * - Add any styles you want here!
+Background-
+#173e43
+#021c1e
+#252839
+ Bakground-gradient - 
+#3a3d40
+#181719
+
+ */
+
+#container {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+body {
+  background-color:#3a3d40;
+}
+
+.body-link {
+  width:97%;
+  height:100px;
+  margin-bottom:10px;
+  padding-top:10px;
+  padding-left:20px;
+  padding-bottom:10px;
+  margin-left:20px;
+  color:#f0f0f0;
+  text-decoration:none;
+  background-color:transparent;
+  border:1px solid transparent;
+  border-radius:15px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.body-link:hover {
+  background-color: #3a3d40;
+}
+
+
+
