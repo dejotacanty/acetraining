@@ -1,0 +1,45 @@
+@import "main.css";
+
+#container {
+  
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+  width:100%;
+  text-decoration:none;
+}
+
+.cert-link {
+  border: 10px solid #555;
+  border-radius:15px;
+  background-color:#222;
+  margin-bottom:50px;
+  margin-top:20px;
+  width:80vw;
+  min-width:700px;
+  height:auto;
+  padding:10px;
+  padding-left:20px;
+}
+
+.cert-link-header {
+  font-weight:700;
+  font-size:18px;
+  text-align:center;
+  margin:0;
+  padding:0;
+  padding-top:10px;
+  padding-bottom:15px;
+  margin-bottom:30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cert-link-desc {
+  text-align:center;
+}
+
+.container a {
+  text-decoration:none;
+  color:#f0f0f0;
+}

@@ -1,53 +1,170 @@
 @import "main.css";
 
-#container {
+@media(min-width:768px){
+  #container {
+    
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+  }
+
+  .column-group {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:20vw;
+  }
+
+  #left-column-group {
+    margin-right:20vw;
+  }
+
+
+  .command-card {
+    border: 10px solid #555;
+    border-radius:15px;
+    background-color:#222;
+    margin-bottom:50px;
+    margin-top:20px;
+    width:20vw;
+    min-width:300px;
+    height:auto;
+    padding:10px;
+    padding-left:20px;
+  }
+
+  .card-header {
+    font-weight:700;
+    font-size:18px;
+    text-align:center;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    padding-bottom:15px;
+    margin-bottom:30px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+
+  .card-list li {
+    margin-bottom:15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+  #container {
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    white-space:normal;
+  }
+
+  .column-group {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .command-card {
+    border: 10px solid #555;
+    border-radius:15px;
+    background-color:#222;
+    margin-bottom:50px;
+    margin-top:20px;
+    width:80vw;
+    min-width:200px;
+    height:auto;
+    padding:10px;
+    padding-left:20px;
+  }
+
+  .card-header {
+    font-weight:700;
+    font-size:18px;
+    text-align:center;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    padding-bottom:15px;
+    margin-bottom:30px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+
+  .card-list li {
+    margin-bottom:15px;
+  }
+
+  #navbar {
+    flex-direction:column;
+    width:100%;
+    height:100px;
+    white-space:normal;
+  }
   
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:center;
-  width:100%;
-}
-
-.column-group {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  width:20vw;
-}
-
-#left-column-group {
-  margin-right:20vw;
-}
-
-
-.command-card {
-  border: 10px solid #555;
-  border-radius:15px;
-  background-color:#222;
-  margin-bottom:50px;
-  margin-top:20px;
-  width:20vw;
-  min-width:300px;
-  height:auto;
-  padding:10px;
-  padding-left:20px;
-}
-
-.card-header {
-  font-weight:700;
-  font-size:18px;
-  text-align:center;
-  margin:0;
-  padding:0;
-  padding-top:10px;
-  padding-bottom:15px;
-  margin-bottom:30px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-
-.card-list li {
-  margin-bottom:15px;
+  #navbar-header {
+    width:100%;
+    flex-direction:column;
+    height:50px;
+    text-align:center;
+    justify-content:center;
+  }
+  
+  #navbar-header h1 {
+    width:100%;
+    margin:0px 0px 0px 25px;
+    height:50px;
+    font-size:18px;
+    text-align:center;
+    justify-content:center;
+  }
+  
+  #navbar-header p {
+    height:40px;
+    margin:0px 0px 0px 30px;
+    visibility:hidden;
+    display:none;
+  }
+  
+  #navbar-links {
+    width:100%;
+    height:50px;
+    font-size:14px;
+    font-weight:700;
+  }
+  
+  .navbar-link {
+    width:33%;
+    height:50px;
+    margin-right:1px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    text-decoration:none;
+    text-align:center;
+  }
 }
