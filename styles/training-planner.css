@@ -16,6 +16,10 @@
   align-items:center;
 }
 
+.card {
+  width:80vw;
+}
+
 li a {
   color:#f0f0f0;
 }
