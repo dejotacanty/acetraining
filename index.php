@@ -1,1 +1,3 @@
-<?php include_once(“index.html”); ?>
+<?php
+header( 'Location: https://wiltonacetraining.herokuapp.com/index.html' ) ;
+?>
